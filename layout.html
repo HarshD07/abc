@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+<style>
+    body{
+        font-family: cursive,'open-sans', sans-serif;
+    }
+    .navbar{
+        font-family: cursive,'open-sans', sans-serif;
+    }
+    .container{
+        font-family: cursive,'open-sans', sans-serif;
+    }
+    .table{
+        border: 15px;
+        padding: 70px;
+    }
+    .row{
+        font-family: cursive,'open-sans', sans-serif;
+    }
+</style>
+<body>
+<div class="container">
+<nav class="navbar navbar-default navbar-fixed-top" id="thenavbar">
+<div class="navbar-header">
+<h4 class="text-danger">Campaign Home</h4>   
+</div>
+</nav>
+</div>
+<hr>
+<div class="container-fluid">
+<h5><em>Search</em></h5>
+<div class="row">
+<div class="col col-md-4">
+<label>Name:</label> <input type="text" placeholder="full name">&nbsp;
+</div>
+<div class="col col-md-4">
+<label>Type:</label><select name="type">
+        <option>AVC</option>
+        <option>Lead</option>
+        <option>HSN</option>
+    </select>
+</div>
+<div class="col col-md-4">
+<label>Revenue above: </label> <input type="text" placeholder="enter here">
+</div><br>&nbsp;
+<div class="col col-md-4 col-sm-8">
+<label>From: </label> <input type="text" placeholder="mm/dd/yyyy">
+</div>
+<div class="col col-md-4 col-sm-8">
+<label>To: </label> <input type="text" placeholder="mm/dd/yyyy">
+</div>
+<div class="col col-md-4 col-sm-8">
+<label>Templates:</label><select name="Templates">
+        <option>Templates only</option>
+        <option>Bootstrap Themes</option>
+        <option>Bootstrap templates</option>
+    </select>
+</div>
+<div class="col col-md-4 col-sm-8">
+<label>Source Code:</label><select name="Source code">
+        <option></option>
+        <option>12345</option>
+        <option>67890</option>
+        <option>09876</option>
+    </select>
+</div>
+<div class="col col-md-4 col-sm-8">
+<label>Extension:</label><select name="Extension">
+        <option></option>
+        <option>12345</option>
+        <option>67890</option>
+        <option>09876</option>
+    </select>
+</div>
+<div class="col col-md-4 col-sm-8">
+<label>Status:</label><select name="Status">
+        <option></option>
+        <option>Completed</option>
+        <option>Proposed</option>
+        <option>In complete</option>
+    </select>
+</div>
+<div class="col col-md-4 col-sm-8">
+<label>Sort By:</label><select name="Sort By">
+        <option>Revenue</option>
+        <option>Today</option>
+        <option>Last week</option>
+    </select>
+</div>
+<div class="col col-md-4 col-sm-8">
+<label>Source Code:</label><select name="Source code">
+        <option>Ascending</option>
+        <option>Descending</option>
+    </select>
+</div>
+<div class="col col-md-4 col-sm-8">
+<input type="reset" value="Reset" style="float: right">&nbsp;
+ <input type="submit" value="search" style="float: right"><br>
+</div>
+</div><hr>
+<input type="button" value="create new campaign" style="float: right"><br>
+<hr>
+<div class="container">
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Status</th>
+<th>Launch Date</th>
+<th>Actual Revenue</th>
+<th>Template</th>
+</tr>
+</thead>
+<tr>
+<td>Thanks Giving 2017- Presidents</td>
+<td>Lead</td>
+<td>Completed</td>
+<td>11/1/2017</td>
+<td>$24,800</td>
+<td>Yes</td>
+</tr>
+</table>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Objective</th>
+<th>Source Code</th>
+<th>Extension</th>
+<th>End Date</th>
+<th>Expected Revenue</th>
+</tr>
+</thead>
+<tr>
+<td>Presidents coins--Anual Sale</td>
+<td>xxxxx</td>
+<td>xxxxxx</td>
+<td>11/25/2018</td>
+<td>$20,000</td>
+</tr>
+</table>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Status</th>
+<th>Launch Date</th>
+<th>Actual Revenue</th>
+<th>Template</th>
+</tr>
+</thead>
+<tr>
+<td>Independence Day 2017 Sale</td>
+<td>AVC</td>
+<td>Completed</td>
+<td>06/25/2018</td>
+<td>$18,410</td>
+<td>Yes</td>
+</tr>
+</table>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Status</th>
+<th>Launch Date</th>
+<th>Actual Revenue</th>
+<th>Template</th>
+</tr>
+</thead>
+<tr>
+<td>Independence Day 2016 Sale</td>
+<td>HSN</td>
+<td>Completed</td>
+<td>06/25/2018</td>
+<td>$9,780</td>
+<td>No</td>
+</tr>
+</table>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Status</th>
+<th>Launch Date</th>
+<th>Actual Revenue</th>
+<th>Template</th>
+</tr>
+</thead>
+<tr>
+<td>2018 New Year</td>
+<td>AVC</td>
+<td>Completed</td>
+<td>06/25/2018</td>
+<td>$11,250</td>
+<td>No</td>
+</tr>
+</table>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Status</th>
+<th>Launch Date</th>
+<th>Actual Revenue</th>
+<th>Template</th>
+</tr>
+</thead>
+<tr>
+<td>2018 Independence Day</td>
+<td>Lead</td>
+<td>proposed</td>
+<td>06/25/2018</td>
+<td>$13,756</td>
+<td>No</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

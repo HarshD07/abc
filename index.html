@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<HTML lan="en">
+    <head>
+        <title>Contact us page</title>
+        <meta charset="utf-8">
+        <link rel='stylesheet' type='text/css' href='stylesht.css'/>
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+        <script type="text/javascript">
+            function validateform(){
+                var name= document.inputs.firstname.value;
+                var password= document.inputs.password.value;
+                
+                if(name==null || name==""){
+                    alert("Name can't be blank")
+                    return false;
+                }
+                if(password.length<6){
+                    alert("min. password lenght is atleast 6 characters long");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="header"><h1>Contact us!</h1></div>
+        <div id="wrapper">
+            <div id="inputs">
+            <form name="inputs" action="#" method="post" onsubmit="return validateform()">
+                First Name:&nbsp;<input type="text" placeholder="first name" name="firstname"><br/><br/>
+                Last Name:&nbsp;<input type="text" placeholder="last name" name="last name"><br/>
+                <br>
+                Email-Id:&nbsp;<input type="email" placeholder="email" name="email"><br/>
+            <br>
+                Password:&nbsp;<input type="password" placeholder="password" name="password"><br/>
+                
+                <br>
+            </form>
+            </div>
+        <div>
+        <form id="options" action="#" method="post" onsubmit="return validateform()" >
+    Message:<br/>&nbsp;<textarea placeholder="enter here"></textarea><br/>
+            <p>Sex:</p><br/>
+        <input type="radio" value="Male" name="sex">Male<br/>
+        <input type="radio" value="Female" name="sex">Female<br/>
+        <input type="radio" value="Other" name="sex">Other<br/>
+            
+        <p>Check all that apply:</p>
+            <input type="checkbox" checked> coz it's default :p
+            <input type="checkbox"> Just had lunch?
+            <input type="checkbox">Yes, Potato bowl, with soda!<br/>
+            <input type="Submit" value="Submit!"/>cos you have filled all information!
+    </form>
+        </div>
+        </div>
+    </body>
+</HTML>
